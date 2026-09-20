@@ -1,0 +1,33 @@
+name: Something went wrong
+description: A bug, a crash, words that came out wrong, a key that did nothing.
+title: "Local Voice: "
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What were you doing?
+      placeholder: Holding Fn in Slack and saying a sentence…
+    validations:
+      required: true
+  - type: textarea
+    id: instead
+    attributes:
+      label: What happened instead?
+      placeholder: Nothing appeared / it pasted twice / it crashed…
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version and Mac
+      description: Help › About shows the version. Prefilled if you came from Help › Report a Problem.
+      placeholder: Local Voice 1.9.4 · macOS 26.1 · M2 MacBook Air
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics (optional)
+      description: Help › Report a Problem puts a "Local Voice diagnostics.txt" in Finder. Drag it here. It lists app events and your system, never what you said or typed.
+  - type: markdown
+    attributes:
+      value: Thank you. Nothing you say in the app is ever sent anywhere; what you write here is the only thing we see.
