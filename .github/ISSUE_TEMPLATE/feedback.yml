@@ -1,0 +1,22 @@
+name: Feedback or an idea
+description: Something confusing, something you wish it did, something you liked.
+title: "Feedback: "
+labels: [feedback]
+body:
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Tell us
+      placeholder: The setup screen didn't make sense because… / I wish it could… / This part was great…
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part?
+      options: [Setup, Dictation, Meeting notes, Settings, Website, Something else]
+  - type: input
+    id: version
+    attributes:
+      label: Version (optional)
+      placeholder: Local Voice 1.9.4
